@@ -99,11 +99,13 @@ body {
   color: white;
   font-weight: 700;
   text-decoration: none;
+  border: 2px solid var(--rojo);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero__button:hover {
-  background: var(--azul);
-  color: white;
+  background: transparent;
+  color: var(--rojo);
 }
 
 .hero__indicators {

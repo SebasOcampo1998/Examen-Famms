@@ -8,3 +8,17 @@ botonBuscar.addEventListener("click", function() {
     alert("Buscaste: " + producto);
   }
 });
+
+let cantidadCarrito = 0;
+
+const botonesCarrito = document.querySelectorAll(".products__button");
+const contadorCarrito = document.querySelector("#contadorCarrito");
+
+botonesCarrito.forEach(function(boton) {
+  boton.addEventListener("click", function() {
+    cantidadCarrito = cantidadCarrito + 1;
+    contadorCarrito.textContent = cantidadCarrito;
+
+    alert("Producto agregado al carrito");
+  });
+});
